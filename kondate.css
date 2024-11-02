@@ -39,7 +39,7 @@ label {
 }
 
 input[type="number"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -65,12 +65,12 @@ input[type="number"] {
 /*押し込みボタン*/
 .btn-square {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 20px 25px;
     text-decoration: none;
     background: #668ad8;/*ボタン色*/
     color: #FFF;
     border-bottom: solid 4px #627295;
-    border-radius: 3px;
+    border-radius: 30px;
 }
 .btn-square:active {
     /*ボタンを押したとき*/
