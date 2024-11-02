@@ -16,8 +16,21 @@ body {
 }
 
 h1 {
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     color: #4CAF50;
+}
+
+h2{
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    text-align: center;
 }
 
 label {
@@ -31,20 +44,6 @@ input[type="number"] {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #45a049;
 }
 
 .menu {
@@ -61,6 +60,31 @@ button:hover {
     margin: 10px 0;
     padding: 10px;
     border-radius: 4px;
+}
+
+/*押し込みボタン*/
+.btn-square {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+/* ボタンを中央寄せにするためのスタイル */
+.button-container {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向に中央寄せ */
+    align-items: center; /* 垂直方向に中央寄せ（必要に応じて） */
+    height: 50vh; /* 親要素の高さを画面全体にする場合 */
 }
 
 /* レスポンシブデザイン */
