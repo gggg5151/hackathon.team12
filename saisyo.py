@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # メニュー項目とそれぞれの価格を辞書で定義
 menu_items = {
-    "主食": [("ご飯", 200), ("パン", 150), ("うどん", 250)],
-    "汁物": [("味噌汁", 100), ("スープ", 120), ("コンソメスープ", 130)],
+    "主食": [("ご飯", 100), ("パン", 150), ("うどん", 150)],
+    "汁物": [("味噌汁", 70), ("スープ", 120), ("コンソメスープ", 130)],
     "小鉢": [("サラダ", 150), ("おひたし", 100), ("冷奴", 120)],
-    "おかず": [("焼き魚", 300), ("ハンバーグ", 350), ("唐揚げ", 280)],
+    "おかず": [("焼き魚", 250), ("ハンバーグ", 350), ("エビフライ", 280)],
     "飲み物": [("お茶", 100), ("ジュース", 150), ("コーヒー", 200)]
 }
 
@@ -21,7 +21,7 @@ def index():
     total_price = sum(price for item, price in selected_menu.values())
     
     # HTMLに変数を渡して表示
-    return render_template('menu.html', menu=selected_menu, total=total_price)
+    return render_template('kondate.html', menu=selected_menu, total=total_price)
 
 if __name__ == '__main__':
     app.run(debug=True)
