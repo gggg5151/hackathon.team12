@@ -1,11 +1,4 @@
-/* リセット */  /*YUSUKEコメント追加
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* murata */
-/* ナビゲーションバー */
+
 .navbar {
     display: flex;
     justify-content: space-between;
