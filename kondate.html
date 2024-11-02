@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム献立生成アプリ</title>
+    <link rel="stylesheet" href="kondate.css">
+</head>
+<body>
+    <div id="title-screen" class="container">
+        <h1>ランダム献立生成アプリ</h1>
+        <p>予算を入力して、ランダムな献立を生成しましょう！</p>
+        <button id="start-btn">スタート</button>
+    </div>
+
+    <div id="menu-screen" class="container" style="display: none;">
+        <h1>献立生成</h1>
+        <label for="budget">予算を入力してください（円）:</label>
+        <input type="number" id="budget" placeholder="例: 2000" min="0">
+        <button id="generate-btn">献立を生成</button>
+        
+        <div id="menu" class="menu">
+            <h2>提案された献立:</h2>
+            <ul id="menu-list"></ul>
+        </div>
+    </div>
+
+    <script src="kondate.js"></script>
+</body>
+</html>
